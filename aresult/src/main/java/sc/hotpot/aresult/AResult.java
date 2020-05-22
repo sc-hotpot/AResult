@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.app.FragmentManager;
 import android.content.Intent;
 
-import androidx.fragment.app.Fragment;
+//import androidx.fragment.app.Fragment;
 
 import io.reactivex.Observable;
 
@@ -17,13 +17,13 @@ public class AResult {
         mAResultFragment = getAResultFragment(activity);
     }
 
-    public AResult(android.app.Fragment fragment) {
-        this(fragment.getActivity());
-    }
-
-    public AResult(Fragment fragment) {
-        this(fragment.getActivity());
-    }
+//    public AResult(android.app.Fragment fragment) {
+//        this(fragment.getActivity());
+//    }
+//
+//    public AResult(Fragment fragment) {
+//        this(fragment.getActivity());
+//    }
 
     private AResultFragment getAResultFragment(Activity activity) {
         AResultFragment fragment = (AResultFragment) activity.getFragmentManager().findFragmentByTag(TAG);
